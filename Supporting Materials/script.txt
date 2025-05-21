@@ -1,0 +1,90 @@
+⏱️ 0:00–0:30 – Preprocessing in Orange
+To begin this project, I used Orange 3 for data preprocessing. The dataset, originally in multiple sheets like sales orders, customers, inventory, etc., was cleaned and filtered in Orange.
+
+Each sheet was loaded, rows were selected using the Select Rows widget to isolate relevant data, and the cleaned subsets were saved using the Save Data widget. This step ensured only high-quality and task-specific data went into Tableau for analysis, reducing clutter and improving performance.
+
+⏱️ 0:30–4:00 – 10 Selected Grains Explanation (from 25 total)
+I'll now walk through 10 key visualization grains from the project:
+
+🔹 Grain 1 – Profit Heatmap (SKU × Region × Time × Category)
+This visual reveals which SKUs perform best in each region over time, identifying top products and regional profit patterns.
+
+🔹 Grain 2 – Customer Segmentation Matrix
+Segmenting by channel, loyalty, order value, and frequency, we can identify high-value customers—crucial for targeting promotions and retention campaigns.
+
+🔹 Grain 3 – Inventory Movement Funnel
+Tracks product flow from suppliers to inventory status at branches. It pinpoints bottlenecks, stock-outs, and overstock issues, aiding inventory optimization.
+
+🔹 Grain 4 – Return Analysis Breakdown
+Visualizes product returns by reason and category. This helps uncover quality issues or unmet customer expectations.
+
+🔹 Grain 5 – Purchase Order Efficiency
+Analyzes supplier performance by comparing order quantity and lead time, allowing identification of reliable versus delayed suppliers.
+
+🔹 Grain 7 – Monthly Sales by Branch, Product, and Payment Method
+Examines first-half 2023 sales trends per branch and product, split by payment method, showing seasonal demand and popular payment types.
+
+🔹 Grain 9 – Category-SubCategory-Loyalty-GrossProfit
+Explores profitability per segment for loyal vs. non-loyal customers, informing loyalty program investments.
+
+🔹 Grain 15 – Loyalty-Customer-GrossProfit (Top 10)
+Ranks the most profitable loyal customers. This is ideal for VIP targeting and personalized services.
+
+🔹 Grain 16 – SubCategory-Monthly Return %
+Tracks return percentage per subcategory monthly through 2023, spotting product issues or seasonal return trends.
+
+🔹 Grain 25 – Profit According to Discount Range
+Evaluates how different discount levels affect total profit—highlighting where discounts drive or hurt profitability.
+
+⏱️ 4:00–6:00 – Dashboards and Storyboard
+I’ve created 6 dashboards that interconnect these grains to form a cohesive story:
+
+📊 Dashboard 1 – Profit Pulse
+Combines Grains 1 and 25 to show the relationship between discounts and regional profits over time.
+
+👥 Dashboard 2 – Customer Insight Hub
+Brings together Grains 2, 9, and 15. It profiles customers by value, loyalty, and profitability—ideal for marketing.
+
+📦 Dashboard 3 – Inventory & Supply Chain Monitor
+Includes Grains 3 and 5. It tracks product movement and supplier efficiency to highlight operational gaps.
+
+🔁 Dashboard 4 – Returns Watchtower
+Uses Grains 4, 16, and 17 to dive deep into returns—by reason, region, and customer loyalty.
+
+🛍️ Dashboard 5 – Sales Trends and Patterns
+Uses Grains 7 and 19 to reflect branch-wise sales and margin trends, with filters by product and payment method.
+
+🌍 Dashboard 6 – Geographic Profitability View
+Incorporates Grain 6 and 22 to compare profitability, discounting, and cost price by country, category, and subcategory.
+
+📚 Storyboard Flow
+The dashboard story moves logically from:
+
+Profitability Analysis →
+
+Customer Behavior →
+
+Operational Bottlenecks →
+
+Returns & Quality Insight →
+
+Sales Trends →
+
+Global Performance Snapshot
+
+This story helps stakeholders answer:
+
+Which products and customers drive profit?
+
+Where are the operational inefficiencies?
+
+How do returns impact loyalty?
+
+What is the impact of discounting?
+
+How do regions compare?
+
+✅ [Wrap-Up]
+This DV project combines effective preprocessing with layered insights across 25 analytical grains and 6 dashboards. It provides a comprehensive view to support profitability, customer intelligence, and supply chain decisions.
+
+Thank you!
