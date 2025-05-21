@@ -1,90 +1,97 @@
-⏱️ 0:00–0:30 – Preprocessing in Orange
-To begin this project, I used Orange 3 for data preprocessing. The dataset, originally in multiple sheets like sales orders, customers, inventory, etc., was cleaned and filtered in Orange.
+🎙️ Final 5-Minute DV Project Presentation Script
+👋 0:00–0:15 – Introduction
+Good [morning/afternoon], everyone.
+We are a team of three: Swapnil, Vivek, and Chinmay, and today we’re excited to present our Data Visualization project that uncovers powerful business insights from a multi-dimensional retail dataset.
 
-Each sheet was loaded, rows were selected using the Select Rows widget to isolate relevant data, and the cleaned subsets were saved using the Save Data widget. This step ensured only high-quality and task-specific data went into Tableau for analysis, reducing clutter and improving performance.
+⏱️ 0:15–0:45 – Preprocessing in Orange
+We began our work with data preprocessing in Orange 3.
+Using multiple sheets like sales orders, customers, inventory, returns, and more, we filtered the necessary rows using the Select Rows widget.
+Then, we saved the cleaned datasets with the Save Data widget.
+This step was critical to ensure that the data sent to Tableau was clean, consistent, and relevant for analysis.
 
-⏱️ 0:30–4:00 – 10 Selected Grains Explanation (from 25 total)
-I'll now walk through 10 key visualization grains from the project:
+⏱️ 0:45–4:00 – 10 Key Grains & Insights
+From over 25 grains, we focused on these 10 impactful visualizations:
 
-🔹 Grain 1 – Profit Heatmap (SKU × Region × Time × Category)
-This visual reveals which SKUs perform best in each region over time, identifying top products and regional profit patterns.
+1️⃣ Profit Heatmap (SKU × Region × Time × Category)
+Highlights top-performing SKUs by geography and time, aiding targeted stocking.
 
-🔹 Grain 2 – Customer Segmentation Matrix
-Segmenting by channel, loyalty, order value, and frequency, we can identify high-value customers—crucial for targeting promotions and retention campaigns.
+2️⃣ Customer Segmentation Matrix
+Clusters customers by channel, loyalty, and purchase behavior, helping in marketing strategy.
 
-🔹 Grain 3 – Inventory Movement Funnel
-Tracks product flow from suppliers to inventory status at branches. It pinpoints bottlenecks, stock-outs, and overstock issues, aiding inventory optimization.
+3️⃣ Inventory Movement Funnel
+Tracks how products move from supplier to shelf, flagging inefficiencies.
 
-🔹 Grain 4 – Return Analysis Breakdown
-Visualizes product returns by reason and category. This helps uncover quality issues or unmet customer expectations.
+4️⃣ Return Analysis Breakdown
+Identifies high-return products and reasons—helpful for quality control.
 
-🔹 Grain 5 – Purchase Order Efficiency
-Analyzes supplier performance by comparing order quantity and lead time, allowing identification of reliable versus delayed suppliers.
+5️⃣ Purchase Order Efficiency
+Measures supplier performance through lead time and order volume.
 
-🔹 Grain 7 – Monthly Sales by Branch, Product, and Payment Method
-Examines first-half 2023 sales trends per branch and product, split by payment method, showing seasonal demand and popular payment types.
+6️⃣ Monthly Sales by Branch & Payment Method (H1 2023)
+Reveals seasonal and regional trends by payment type.
 
-🔹 Grain 9 – Category-SubCategory-Loyalty-GrossProfit
-Explores profitability per segment for loyal vs. non-loyal customers, informing loyalty program investments.
+7️⃣ Category vs Loyalty-wise Gross Profit
+Shows how loyal customers contribute differently across product categories.
 
-🔹 Grain 15 – Loyalty-Customer-GrossProfit (Top 10)
-Ranks the most profitable loyal customers. This is ideal for VIP targeting and personalized services.
+8️⃣ Top 10 Loyal Customers by Gross Profit
+Identifies VIP customers for reward programs and retention efforts.
 
-🔹 Grain 16 – SubCategory-Monthly Return %
-Tracks return percentage per subcategory monthly through 2023, spotting product issues or seasonal return trends.
+9️⃣ Monthly Return % by SubCategory
+Reveals subcategories with seasonal or persistently high return rates.
 
-🔹 Grain 25 – Profit According to Discount Range
-Evaluates how different discount levels affect total profit—highlighting where discounts drive or hurt profitability.
+🔟 Profit by Discount Range
+Uncovers the profitability sweet spot across various discount bands.
 
-⏱️ 4:00–6:00 – Dashboards and Storyboard
-I’ve created 6 dashboards that interconnect these grains to form a cohesive story:
+⏱️ 4:00–5:30 – Dashboards & Storyboard
+We built 6 insightful dashboards, stitched together in a storyboard that simulates real-world business flow:
 
-📊 Dashboard 1 – Profit Pulse
-Combines Grains 1 and 25 to show the relationship between discounts and regional profits over time.
+📊 1. Profit Pulse
+(Grains 1 & 25) – How profit varies by SKU and discount level.
 
-👥 Dashboard 2 – Customer Insight Hub
-Brings together Grains 2, 9, and 15. It profiles customers by value, loyalty, and profitability—ideal for marketing.
+👥 2. Customer Insight Hub
+(Grains 2, 7, 15) – Understand and prioritize your most valuable customers.
 
-📦 Dashboard 3 – Inventory & Supply Chain Monitor
-Includes Grains 3 and 5. It tracks product movement and supplier efficiency to highlight operational gaps.
+📦 3. Inventory & Supply Chain Monitor
+(Grains 3 & 5) – Track supplier efficiency and stock flow.
 
-🔁 Dashboard 4 – Returns Watchtower
-Uses Grains 4, 16, and 17 to dive deep into returns—by reason, region, and customer loyalty.
+🔁 4. Returns Analyzer
+(Grains 4, 16, 17) – Dissect returns by reason, region, and loyalty.
 
-🛍️ Dashboard 5 – Sales Trends and Patterns
-Uses Grains 7 and 19 to reflect branch-wise sales and margin trends, with filters by product and payment method.
+🛍️ 5. Sales Snapshot
+(Grains 7 & 19) – Monitor monthly trends and branch-level sales.
 
-🌍 Dashboard 6 – Geographic Profitability View
-Incorporates Grain 6 and 22 to compare profitability, discounting, and cost price by country, category, and subcategory.
+🌍 6. Country-wise Profitability View
+(Grains 6 & 22) – Compare metrics like revenue, discount, and cost across countries.
 
-📚 Storyboard Flow
-The dashboard story moves logically from:
+🧭 Storyline Flow:
+Starts with profitability, dives into customer behavior, flows through inventory and returns, and ends with a regional profitability snapshot—mimicking a C-level decision path.
 
-Profitability Analysis →
+⏱️ 5:30–6:00 – OLAP Pie Chart Analysis
+In addition to Tableau, we used OLAP in Excel to break down sales by product type.
 
-Customer Behavior →
+Here’s a pie chart showing the sales contribution of clothing items:
 
-Operational Bottlenecks →
 
-Returns & Quality Insight →
 
-Sales Trends →
+Jacket, Pants, Shirt: ~23% each
 
-Global Performance Snapshot
+Dress: 21%
 
-This story helps stakeholders answer:
+Jeans: 10%
 
-Which products and customers drive profit?
+This gives us a quick view of high-performing categories and helps in category-level planning.
 
-Where are the operational inefficiencies?
+✅ Wrap-Up
+To conclude:
 
-How do returns impact loyalty?
+Data was preprocessed in Orange
 
-What is the impact of discounting?
+Insights derived through 25 grains (10 discussed)
 
-How do regions compare?
+6 dashboards form a complete business story
 
-✅ [Wrap-Up]
-This DV project combines effective preprocessing with layered insights across 25 analytical grains and 6 dashboards. It provides a comprehensive view to support profitability, customer intelligence, and supply chain decisions.
+Additional OLAP analysis validated our findings
 
 Thank you!
+We are Swapnil, Vivek, and Chinmay – and we appreciate your attention.
+
